@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <input id="display" class="type-button" class="display" type="text" name="display" readonly>
+            </div>
+            <div>
+                <button class="type-button" id="col-btn" onclick="claerDisplay ('')">AC</button >
+                <button class="type-button" id="col-btn" onclick="backSpace ('')"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="type-button" id="col-btn" col-btn onclick="btn ('.')">.</button>
+                <button class="type-button" id="col-btn" col-btn onclick="btn ('/')">/</button>
+            </div>
+            <div>
+                <button class="type-button" onclick="btn ('7')">7</button>
+                <button class="type-button" onclick="btn ('8')">8</button>
+                <button class="type-button" onclick="btn ('9')">9</button>
+                <button class="type-button" id="col-btn" onclick="btn ('*')">*</button>
+            </div>
+            <div>
+                <button class="type-button" onclick="btn ('4')">4</button>
+                <button class="type-button" onclick="btn ('5')">5</button>
+                <button class="type-button" onclick="btn ('6')">6</button>
+                <button class="type-button" id="col-btn" onclick="btn ('-')">-</button>
+            </div>
+            <div>
+                <button class="type-button" onclick="btn ('1')">1</button>
+                <button class="type-button" onclick="btn ('2')">2</button>
+                <button class="type-button" onclick="btn ('3')">3</button>
+                <button class="type-button" id="col-btn" onclick="btn ('+')">+</button>
+            </div>
+            <div>
+                <button class="type-button" onclick="btn ('00')">00</button>
+                <button class="type-button" onclick="btn ('0')">0</button>
+                <button class="type-button" id="calculate" onclick="calculate ()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
